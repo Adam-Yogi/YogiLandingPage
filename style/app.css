@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Inter', 'sans-serif';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #2C3639;
+    background-color: #F9F7F7;
+
+}
+
+header.nav-container{
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #112D4E;
+    top: 0;
+    position: fixed;
+    z-index: 999;
+    transition: all .25s ease-in-out;
+
+}
+
+header.nav-container img{
+    margin-left: 2rem;
+}
+
+header.nav-container .nav-list ul{
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem 4rem;
+}
+
+header.nav-container .nav-list li{
+    list-style-type: none;
+}
+
+header.nav-container .nav-list li a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+header.nav-container .nav-list li:hover{
+    list-style-type: disc;
+    color: #F7ECDE;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+}
+
+.greeting{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 9rem;
+    flex-direction: column;
+    align-items: center;
+
+}
+.greeting h1{
+    font-weight: 400;
+    font-size: 500%;
+}
+
+.stripe {
+    display: block;
+    width: 60%;
+    height: 1px;
+    background-color: #2C3639;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DBE2EF;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 20%);
+    border-radius: 25px;
+    padding: 4rem;
+}
+
+.section-name{
+    margin-top: 0;
+    font-size: 3rem;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#about content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+#about content p{
+    margin-top: 3rem;
+    align-self: first baseline;
+    width: 250px;
+    font-weight: 500;
+    font-size: medium; 
+}
+
+.about-video{
+    width:  50%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#work content{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 2rem;
+
+}
+
+#work p{
+    text-align: center;
+}
+
+.work-video{
+    width:  100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#work content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#contact content{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DBE2EF;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 20%);
+    padding: 2rem;
+}
+
+aside table{
+    margin-top: 3rem;
+    text-align: justify;
+    width: 350px;
+    font-weight: 500;
+    font-size: medium; 
+}
+
+footer{
+    margin-top: 2rem;
+    background-color: #112D4E;
+    color: white;
+    text-align: center;
+}
+
+.scroll-down header{
+    transform: translate3d(0, -100%, 0);
+}
+
+@media screen and (max-width: 1200px){
+    header.nav-container{
+        flex-direction: column;
+    }
+
+    .card{
+        padding: 1rem;
+    }
+
+    #about content{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .about-video{
+        width:  100%;
+        height: auto;
+    }
+
+    .work-video{
+        width:  100%;
+        height: auto;
+
+
+    }
+
+    #about content p{
+        margin-top: 1rem;
+        text-align: center;
+        width: auto;
+        font-size: small;
+    }
+
+
+    #work content{
+        flex-direction: column;
+    }
+    #contact content{
+        flex-direction: column;
+        font-size: small;
+        display: flex;
+        gap: 0rem;
+    }
+
+    #contact{
+        flex-direction: column;
+    }
+
+    aside{
+        padding: 2rem;
+    }
+    
+    aside table{
+        margin-top: 3rem;
+        text-align: justify;
+        width: auto;
+        font-weight: 500;
+        font-size: medium; 
+    }
+
+    header.nav-container .nav-list ul{
+        padding-right: 0rem;
+        padding-left: 0rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    header.nav-container img{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+}
